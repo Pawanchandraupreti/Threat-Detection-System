@@ -15,3 +15,5 @@ logs["anomaly"] = model.predict(X)
 anomalies = logs[logs["anomaly"] == -1]
 anomalies.to_csv("detected_anomalies.csv")
 print(f"Detected {len(anomalies)} anomalies!")
+
+
